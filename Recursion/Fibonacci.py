@@ -1,9 +1,9 @@
 def fibonacci(n):
-    assert n >= 0 and int(n) == n, 'Enter positive integer number only'
-    if n in [0, 1]:
+    assert n >= 0, 'Enter positive integer number only'
+    if n in [0, 1]:  # ----------                       ---O(1)
         return n
     else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
+        return fibonacci(n - 1) + fibonacci(n - 2)  # -----O(2^n)  -O(Branches ^ depth)
 
 
 n = int(input())

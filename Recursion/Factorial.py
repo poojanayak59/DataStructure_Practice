@@ -5,5 +5,7 @@ def factorial(n):
         return n * factorial(n - 1)
 
 
+# Runtime complexity is O(n)
+
 n = int(input())
 print(factorial(n))

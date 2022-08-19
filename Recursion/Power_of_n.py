@@ -7,6 +7,7 @@ def power(base, expo):
     else:
         return base * power(base, expo - 1)  # x^n = x * x^n-1
 
+# Runtime complexity is O(2^n)
 
 base = int(input())
 expo = int(input())
